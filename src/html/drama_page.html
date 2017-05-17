@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <title>Shakespeare's Soliloquies</title>
+        <meta name="about" content="prototype website for compsci 345 a3">
+        <meta name="author" content="Stanislav Pankrashin">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Custom css-->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!--bootstrap-->
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+
+
+    </head>
+    <body>
+        <div id = 'header' class = 'container-fluid'>
+            <div class = 'row'>
+                <!--img source and whatnot will go here-->
+                <div class = 'col-xs-1'>
+                    <img id = "painting" src="..\img\William-Shakespeare.jpg" alt="A painting of willam shakespere">
+                </div>
+                <div id = 'title' class = 'col-xs-7'>
+                    <h1>Shakespeare's Soliloquies <small>Drama Page</small></h1>
+                </div>
+                <div id = 'user-greeting' class = 'col-xs-2'>
+                    <h3>Hi Romeo</h3>
+                    <a href="">Log Out</a>
+                    
+                </div>
+                <div class = 'col-xs-1'>
+                    <img id = 'userimg' src="..\img\Romeo.jpg" alt="a picture of romeo">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id = 'sidebar' class = 'container-fluid'>
+            <div class = 'row'>
+                <ul class="nav list-group">
+                    <li>
+                        <button class="btn btn-lg list-group-item sidebar-button" type="submit">Home</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-lg list-group-item sidebar-button" type="submit">Dramas</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-lg list-group-item sidebar-button" type="submit">Assignments</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-lg list-group-item sidebar-button" type="submit">Statistics</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-lg list-group-item sidebar-button" type="submit">Account</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id = 'content' class = 'container-fluid'>
+            <div class = 'row'>
+                <div class = "col-xs-8 slightPadding">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter search term">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Search</button>
+                        </span>
+                    </div>                   
+                </div>
+
+                <div class = "col-xs-4 slightPadding">
+                    <button type="button" class = "btn btn-default" data-toggle = 'modal' data-target = '#advanced-search'><span class = "glyphicon glyphicon-search"></span> (Advanced Search)</button>
+                </div>
+            </div>
+            <div class = 'row'>
+                <div id = "playlist" class="panel panel-default">        
+                    <div class="panel-heading">Shakespeare's Works</div>
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Title <span class = 'glyphicon glyphicon-minus'></span></th>
+                                <th>Year <span class = 'glyphicon glyphicon-chevron-down'></span></th>
+                                <th>Genre <span class = 'glyphicon glyphicon-minus'></span></th>
+                                <th>Version <span class = 'glyphicon glyphicon-minus'></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Romeo &amp Juliet</td> <td>1400</td> <td>Tragedy</td> <td>Original</td>
+                            </tr>
+                            <tr>
+                                <td>King Lear</td> <td>1300</td> <td>Drama</td> <td>Original</td>
+                            </tr>
+                            <tr>
+                                <td>Macbeth</td> <td>1200</td> <td>Tragedy</td> <td>Revised</td>
+                            </tr>
+                            <tr>
+                                <td>Othello</td> <td>800BC</td> <td>Tragedy - Comedy</td> <td>Revised</td>
+                            </tr>
+                        </tbody>
+                    </table>         
+                </div>
+            </div>
+        </div>
+
+        <!--Adanced search modal window-->
+        <div class = 'container'>
+            <div id = 'advanced-search' class="modal fade modal-md" role="dialog">
+                <div "modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Advanced Search</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class = 'container'>
+                                <div class = 'row'>
+                                    <div class = 'col-xs-6'>
+                                        <div>                                   
+                                            <label for="yearfrom">Year:</label>
+                                            <input id = 'yearfrom'type="text" class="form-control" name="" value="Year">
+                                        </div>
+                                    </div>
+                                    <div class = 'col-xs-2'>
+                                        <div class="btn-group">
+                                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Between<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>Between</li>
+                                                <li>Greater than</li>
+                                                <li>Lesser than</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class = 'col-xs-4'>
+                                        <input id = 'yeartoo'type="text" class="form-control" name="" value="Year">
+ 
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+
+
+
+
+
+
+
+        <!--Scripts, it's best to load these last so the website loads faster-->
+        <script src="../js/logic.js"></script>
+        <script src="../js/jquery-3.2.1.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
