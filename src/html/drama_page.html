@@ -106,10 +106,8 @@
                     </table>         
                 </div>
             </div>
-        </div>
 
-        <!--Adanced search modal window-->
-        <div class = 'container'>
+            <!--Adanced search modal window-->
             <div id = 'advanced-search' class="modal fade modal-md" role="dialog">
                 <div "modal-dialog">
                     <div class="modal-content">
@@ -120,9 +118,14 @@
                         <div class="modal-body">
                             <div class = 'container'>
                                 <div class = 'row'>
-                                    <div class = 'col-xs-6'>
-                                        <div>                                   
-                                            <label for="yearfrom">Year:</label>
+                                    <h2>
+                                        Year:
+                                    </h2>
+                                    
+                                </div>
+                                <div class = 'row'>
+                                    <div class = 'col-xs-5'>
+                                        <div>
                                             <input id = 'yearfrom'type="text" class="form-control" name="" value="Year">
                                         </div>
                                     </div>
@@ -138,22 +141,44 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class = 'col-xs-4'>
+                                    <div class = 'col-xs-5'>
                                         <input id = 'yeartoo'type="text" class="form-control" name="" value="Year">
- 
                                     </div>
-                                    
                                 </div>
-                                
+                                <div class = 'row'>
+                                    <h2>Genre</h2>
+                                </div>
+                                <div class = 'row'>
+                                    <div class = 'col-xs-4'>
+                                        <input type="checkbox" name="trajedy" value="Trajedy">
+                                        <label for="trajedy">Trajedy</label>
+                                    </div>
+                                    <div class = 'col-xs-4'>
+                                        <input type="checkbox" name="comedy" value="Comedy">
+                                        <label for="comedy">Comedy</label>
+                                    </div>
+                                    <div class = 'col-xs-4'>
+                                        <input type="checkbox" name="drama" value="Drama">
+                                        <label for="drama">Drama</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Search</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div> 
         </div>
+        <!-- end of container -->
+
+        
+        
+  
+        
+        
 
 
 
