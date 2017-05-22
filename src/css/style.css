@@ -42,3 +42,6 @@
     height: 5em;
 }
 
+.hidden{
+    display: none;
+}

@@ -25,7 +25,9 @@
                     <img id = "painting" src="img\William-Shakespeare.jpg" alt="A painting of willam shakespere">
                 </div>
                 <div id = 'title' class = 'col-xs-7'>
-                    <h1>Shakespeare's Soliloquies <small>Home Page</small></h1>
+                    <div class = 'page-header'>
+                        <h1>Shakespeare's Soliloquies <small id = 'pageName'>Home Page</small></h1>
+                    </div> 
                 </div>
 
                 <div id = 'user-greeting' class = 'col-xs-2'>
@@ -45,26 +47,26 @@
             <div class = 'row'>
                 <ul class="nav list-group">
                     <li>
-                        <button class="btn btn-lg list-group-item sidebar-button" type="submit">Home</button>
+                        <button id = "home" class="btn btn-lg list-group-item sidebar-button" type="submit" onclick = 'sidebarButtonChanger(this.id)'>Home</button>
                     </li>
                     <li>
-                        <button class="btn btn-lg list-group-item sidebar-button" type="submit">Dramas</button>
+                        <button id = "drama" class="btn btn-lg list-group-item sidebar-button" type="submit" onclick = 'sidebarButtonChanger(this.id)'>Dramas</button>
                     </li>
                     <li>
-                        <button class="btn btn-lg list-group-item sidebar-button" type="submit">Assignments</button>
+                        <button id = "assignments" class="btn btn-lg list-group-item sidebar-button" type="submit" onclick = 'sidebarButtonChanger(this.id)'>Assignments</button>
                     </li>
                     <li>
-                        <button class="btn btn-lg list-group-item sidebar-button" type="submit">Statistics</button>
+                        <button id = "statistics" class="btn btn-lg list-group-item sidebar-button" type="submit" onclick = 'sidebarButtonChanger(this.id)'>Statistics</button>
                     </li>
                     <li>
-                        <button class="btn btn-lg list-group-item sidebar-button" type="submit">Account</button>
+                        <button id = "account" class="btn btn-lg list-group-item sidebar-button" type="submit" onclick = 'sidebarButtonChanger(this.id)'>Account</button>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div id = 'content' class = 'container-fluid'>
-            <iframe src="html/assignment_review.html" width="100%" height="100%"></iframe>
+            <iframe id = 'pageLinker' src="html/home_page.html" width="100%" height="100%"></iframe>
         </div>
 
 
