@@ -1,10 +1,9 @@
-/* sets the domain of every page to prevent crossdomain issues*/
-window.addEventListener('load', setDomain);
+/* event listener listens to messages containing a target path, and then changes the iframe */
+window.addEventListener('message', function(event){
+    var path = event.data;
 
-function setDomain(){
-    document.domain = '';
-}
-
+    $("#pageLinker").attr("src", path)
+});
 
 /* function which changes the iframe using the sidebar buttons*/
 function sidebarButtonChanger(id){
@@ -19,14 +18,10 @@ function sidebarButtonChanger(id){
 }
 
 /*Sets the page to the drama summary*/
-function toDramaSummary(){
-    var path = 'play_summary.html';
-    var header = "Play Summary Page";
+function toDramaSummary(target_path){
+    var path = target_path;
 
-    var newIframe = "<iframe id = 'pageLinker' src=" + path +" width='100%' height='100%'></iframe>";
-
-    $("#pageName").html(header);
-
-    window.parent.$("#pageLinker").attr("src", path);
+    /* can send a message to another window, which listens in onto the message and changes the iframe */
+    window.parent.postMessage(target_path, '*');
 }
 
