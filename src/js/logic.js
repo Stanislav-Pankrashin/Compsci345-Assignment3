@@ -18,10 +18,23 @@ function sidebarButtonChanger(id){
 }
 
 /*Sets the page to the drama summary*/
-function toDramaSummary(target_path){
+function changePage(target_path){
     var path = target_path;
 
     /* can send a message to another window, which listens in onto the message and changes the iframe */
     window.parent.postMessage(target_path, '*');
 }
+/* Changes the visibility of an element, given its id */
+function changeVisibility(sender){
+    var element = $("#" + sender);
 
+    if (element.hasClass("hidden")){
+        element.removeClass("hidden");
+    }else{
+        element.addClass("hidden");
+    }
+}
+
+function onClickTest(){
+    console.log("Clicked!");
+}
