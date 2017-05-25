@@ -45,3 +45,7 @@
 .hidden{
     display: none;
 }
+
+.light-background{
+    background-color: #dce1f2;
+}
