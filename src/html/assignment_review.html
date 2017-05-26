@@ -18,26 +18,73 @@
     </head>
 
     <body class = 'container-fluid light-background'>
-        <div class = 'row'>
-            <h1>Assignment Review</h1>
-        </div>
+        <header position = 'fixed'>
+            <div class = 'row slightPadding'>
+                <div class = 'panel panel-default'>
+                    <div class = 'panel-heading'>
+                        <h1>Assignment Review: <br> 
+                        Individual Problem Based assignment 1- Romeo &amp Juliet</h1>
+                        <button id = 'button1' type="button" class = 'btn btn-default' onclick = 'changeVisibility("quote", this.id)'><span class = "glyphicon glyphicon-chevron-down"></span></button>
+                    </div>
+                    <div id = 'quote' class = 'panel-body hidden'>
+                        <h2>Scene 32</h2>
+                        <p>
+                            <q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</q>
+                        </p>                      
+                    </div>
+                </div>
 
-        <div class = 'row'>
-            <form>
-                <div class = 'form-group'>
-                    <label for="question1">What themes are demonstrated in this passage? <button class = 'btn btn-default' type="button" onclick = 'changeVisibility("question1")'><span class="caret"></span></button></label>
-                    <textarea id = 'question1' class = 'form-control, hidden' rows="5" cols="100%"></textarea>
-                </div>
-                <div class = 'form-group'>
-                    <label for="question2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium? <button class = 'btn btn-default' type="button" onclick = 'changeVisibility("question2")'><span class="caret"></span></button></label>
-                    <textarea id = 'question2' class = 'form-control hidden' rows="5" cols="100%"></textarea>
-                </div>
-                <div class = 'form-group'>
-                    <label for="question3">quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo? <button class = 'btn btn-default' type="button" onclick = 'changeVisibility("question3")'><span class="caret"></span></button></label>
-                    <textarea id = 'question3' class = 'form-control hidden' rows="5" cols="100%"></textarea>
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>                                
-            </form>
+            </div>
+
+        </header>
+
+       <div id = 'question_form'>
+            <div class = 'row'>
+                <form class = 'slightPadding'>
+                    <div class = 'form-group slightPadding'>
+                        <label for="question1">What themes are demonstrated in this passage?</label>
+                        <div class = 'panel panel-default'>
+                            <div class = 'panel-heading'>
+                                Your response: <button id = 'button1' class = 'btn btn-default' type="button" onclick = 'changeVisibility("question1", this.id)'><span class="glyphicon glyphicon-chevron-down"></span></button>
+                            </div>
+                            <div class = 'panel-body'>
+                                <textarea id = 'question1' class = 'form-control hidden' rows="5" cols="100%"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    
+                    <div class = 'form-group slightPadding'>
+                        <label for="question1">Prima verear omittam te pri, et aeque iudicabit intellegebat nam?</label>
+                        <div class = 'panel panel-default'>
+                            <div class = 'panel-heading'>
+                                Your response: <button id = 'button2' class = 'btn btn-default' type="button" onclick = 'changeVisibility("question2", this.id)'><span class="glyphicon glyphicon-chevron-down"></span></button>
+                            </div>
+                            <div class = 'panel-body'>
+                                <textarea id = 'question2' class = 'form-control hidden' rows="5" cols="100%"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class = 'form-group slightPadding'>
+                        <label for="question1">an consetetur definiebas has, sit te aliquid fabellas?</label>
+                        <div class = 'panel panel-default'>
+                            <div class = 'panel-heading'>
+                                Your response: <button id = 'button3' class = 'btn btn-default' type="button" onclick = 'changeVisibility("question3", this.id)'><span class="glyphicon glyphicon-chevron-down"></span></button>
+                            </div>
+                            <div class = 'panel-body'>
+                                <textarea id = 'question3' class = 'form-control hidden' rows="5" cols="100%"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-default">Submit</button>                                
+                </form>
+            </div>
         </div>
 
 

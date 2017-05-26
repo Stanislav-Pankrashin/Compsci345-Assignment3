@@ -19,12 +19,18 @@
 
     <body class = 'container-fluid light-background'>
         <header position = 'fixed'>
-            <div class = 'row'>
-                <h1>Assignment: Individual Problem Based assignment 1- Romeo &amp Juliet</h1>
-                <h2>Scene 32</h2>
-                <p>
-                    <q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</q>
-                </p>
+            <div class = 'row slightPadding'>
+                <div class = 'panel panel-default'>
+                    <div class = 'panel-heading'>
+                        <h1>Assignment: Individual Problem Based assignment 1- Romeo &amp Juliet</h1>
+                    </div>
+                    <div class = 'panel-body'>
+                        <h2>Scene 32</h2>
+                        <p>
+                            <q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</q>
+                        </p>                      
+                    </div>
+                </div>
 
             </div>
 
@@ -32,23 +38,50 @@
 
         <div id = 'question_form'>
             <div class = 'row'>
-                <form>
-                    <div class = 'form-group'>
+                <form class = 'slightPadding'>
+                    <div class = 'form-group slightPadding'>
                         <label for="question1">What themes are demonstrated in this passage?</label>
-                        <textarea id = 'question1' class = 'form-control' rows="5" cols="100%"></textarea>
+                        <div class = 'panel panel-default'>
+                            <div class = 'panel-heading'>
+                                Your response: <button id = 'button1' class = 'btn btn-default' type="button" onclick = 'changeVisibility("question1", this.id)'><span class="glyphicon glyphicon-chevron-down"></span></button>
+                            </div>
+                            <div class = 'panel-body'>
+                                <textarea id = 'question1' class = 'form-control hidden' rows="5" cols="100%"></textarea>
+                            </div>
+                        </div>
                     </div>
-                    <div class = 'form-group'>
-                        <label for="question2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium?</label>
-                        <textarea id = 'question2' class = 'form-control' rows="5" cols="100%"></textarea>
+
+                    <hr>
+                    
+                    <div class = 'form-group slightPadding'>
+                        <label for="question1">Prima verear omittam te pri, et aeque iudicabit intellegebat nam?</label>
+                        <div class = 'panel panel-default'>
+                            <div class = 'panel-heading'>
+                                Your response: <button id = 'button2' class = 'btn btn-default' type="button" onclick = 'changeVisibility("question2", this.id)'><span class="glyphicon glyphicon-chevron-down"></span></button>
+                            </div>
+                            <div class = 'panel-body'>
+                                <textarea id = 'question2' class = 'form-control hidden' rows="5" cols="100%"></textarea>
+                            </div>
+                        </div>
                     </div>
-                    <div class = 'form-group'>
-                        <label for="question3">quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo?</label>
-                        <textarea id = 'question3' class = 'form-control' rows="5" cols="100%"></textarea>
+
+                    <hr>
+
+                    <div class = 'form-group slightPadding'>
+                        <label for="question1">an consetetur definiebas has, sit te aliquid fabellas?</label>
+                        <div class = 'panel panel-default'>
+                            <div class = 'panel-heading'>
+                                Your response: <button id = 'button3' class = 'btn btn-default' type="button" onclick = 'changeVisibility("question3", this.id)'><span class="glyphicon glyphicon-chevron-down"></span></button>
+                            </div>
+                            <div class = 'panel-body'>
+                                <textarea id = 'question3' class = 'form-control hidden' rows="5" cols="100%"></textarea>
+                            </div>
+                        </div>
                     </div>
+
+
                     <button type="submit" class="btn btn-default">Submit</button>                                
                 </form>
-
-
             </div>
         </div>
 

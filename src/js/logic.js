@@ -10,8 +10,6 @@ function sidebarButtonChanger(id){
     var path = "html/" + id + "_page.html";
     var header = id[0].toUpperCase() + id.slice(1) + " Page";
 
-    var newIframe = "<iframe id = 'pageLinker' src=" + path + " width='100%' height='100%'></iframe>";
-
     $("#pageName").html(header);
 
     $("#pageLinker").attr("src", path);
@@ -27,13 +25,28 @@ function changePage(target_path){
 
 
 /* Changes the visibility of an element, given its id */
-function changeVisibility(sender){
-    var element = $("#" + sender);
+function changeVisibility(target, sender){
+    var element = $("#" + target);
 
     if (element.hasClass("hidden")){
         element.removeClass("hidden");
     }else{
         element.addClass("hidden");
+    }
+
+    /* if the caller object has a caret, swap the direction */
+    var children = $("#" + sender).children();
+    try {
+        if(children.hasClass("glyphicon-chevron-down")){
+            children.removeClass("glyphicon-chevron-down");
+            children.addClass("glyphicon-chevron-up");
+
+        }else if (children.hasClass("glyphicon-chevron-up")){
+            children.removeClass("glyphicon-chevron-up");
+            children.addClass("glyphicon-chevron-down");
+        }
+    } catch (error) {
+        
     }
 }
 

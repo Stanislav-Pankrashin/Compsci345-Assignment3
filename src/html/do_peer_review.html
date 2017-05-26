@@ -18,13 +18,13 @@
     </head>
 
     <body class = 'container-fluid light-background'>
-        <div class = 'row'>
+        <div class = 'row slightPadding'>
             <h1>Peer Review for Bob Dole</h1>
         </div>
 
         <div class = 'row'>
-            <form>
-                <div class = 'form-group'>
+            <form class = 'slightPadding'>
+                <div class = 'form-group slightPadding'>
                     <label for="question1">What themes are demonstrated in this passage?</label>
                     <div class = 'panel panel-default'>
                         <div class = 'panel-heading'>
@@ -36,7 +36,7 @@
                     </div>
                     <div class = 'panel panel-default'>
                         <div class = 'panel-heading'>
-                            Your response: <button class = 'btn btn-default' type="button" onclick = 'changeVisibility("question1")'><span class="caret"></span></button>
+                            Your response: <button id = 'button1' class = 'btn btn-default' type="button" onclick = 'changeVisibility("question1", this.id)'><span class="glyphicon glyphicon-chevron-down"></span></button>
                         </div>
                         <div class = 'panel-body'>
                             <textarea id = 'question1' class = 'form-control hidden' rows="5" cols="100%"></textarea>
@@ -46,7 +46,7 @@
 
                 <hr>
                 
-                <div class = 'form-group'>
+                <div class = 'form-group slightPadding'>
                     <label for="question1">Prima verear omittam te pri, et aeque iudicabit intellegebat nam?</label>
                     <div class = 'panel panel-default'>
                         <div class = 'panel-heading'>
@@ -58,7 +58,7 @@
                     </div>
                     <div class = 'panel panel-default'>
                         <div class = 'panel-heading'>
-                            Your response: <button class = 'btn btn-default' type="button" onclick = 'changeVisibility("question2")'><span class="caret"></span></button>
+                            Your response: <button id = 'button2' class = 'btn btn-default' type="button" onclick = 'changeVisibility("question2", this.id)'><span class="glyphicon glyphicon-chevron-down"></span></button>
                         </div>
                         <div class = 'panel-body'>
                             <textarea id = 'question2' class = 'form-control hidden' rows="5" cols="100%"></textarea>
@@ -68,7 +68,7 @@
 
                 <hr>
 
-                <div class = 'form-group'>
+                <div class = 'form-group slightPadding'>
                     <label for="question1">an consetetur definiebas has, sit te aliquid fabellas?</label>
                     <div class = 'panel panel-default'>
                         <div class = 'panel-heading'>
@@ -80,7 +80,7 @@
                     </div>
                     <div class = 'panel panel-default'>
                         <div class = 'panel-heading'>
-                            Your response: <button class = 'btn btn-default' type="button" onclick = 'changeVisibility("question3")'><span class="caret"></span></button>
+                            Your response: <button id = 'button3' class = 'btn btn-default' type="button" onclick = 'changeVisibility("question3", this.id)'><span class="glyphicon glyphicon-chevron-down"></span></button>
                         </div>
                         <div class = 'panel-body'>
                             <textarea id = 'question3' class = 'form-control hidden' rows="5" cols="100%"></textarea>

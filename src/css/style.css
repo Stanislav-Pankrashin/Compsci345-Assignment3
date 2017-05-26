@@ -1,36 +1,43 @@
+iframe{
+    border-color: #dce1f2;
+    outline: none;
+}
+
 #header {
     position:absolute;
     left:0; right:0;
-    height: 120px;
+    height: 122px;
     border-style: solid;
     text-align: center;
 }
 #sidebar {
     position:absolute;
-    left:0; top:122px; bottom: 0;
-    width: 178px;
+    left:0; top:120px; bottom: 0;
+    width: 180px;
     border-style: solid;
 }
 #content {
     position: absolute;
-    left:180px; top:122px; right:0; bottom:0;
+    left:178px; top:120px; right:0; bottom:0;
     border-style: solid;
 }
 
 #painting {
     left:0; right:0; top: 0;
     position: absolute;
-    height: 114px;
+    height: 116px;
 }
 
 #userimg{
     float: right;
     position: absolute;
-    height: 114px; 
+    height: 116px; 
 }
 
 .slightPadding{
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 #playlist{
@@ -42,10 +49,25 @@
     height: 5em;
 }
 
+.hoverUnderline:hover{
+    text-decoration: underline;
+
+}
+
 .hidden{
     display: none;
 }
 
 .light-background{
     background-color: #dce1f2;
+    border-color: #758ecd;
+}
+
+div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fancy-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
 }

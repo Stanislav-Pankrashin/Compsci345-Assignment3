@@ -18,66 +18,74 @@
     </head>
 
     <body class = 'container-fluid light-background'>
-        <div class = 'row'>
+        <div class = 'row slightPadding'>
             <div id = "playlist" class="panel panel-default">        
-                <div class="panel-heading">Current Assignments</div>
-                <table class="table table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Assessed Text</th>
-                            <th>Due Date</th>
-                            <th>Group assignment?</th>
-                            <th>Completed?</th>
-                            <th>Peer Review</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td onclick = 'changePage("html/assignment_review.html")'>Peer assessed assignment 2</td> <td>Macbeth</td> <td>07/10</td> <td>Yes</td> <td>Yes</td> <td><button type="button" class = 'btn btn-default' onclick = 'changePage("html/peer_review_page.html")'>Peer Review</button></td>
-                        </tr>
-                        <tr>
-                            <td onclick = 'changePage("html/do_assignment_screen.html")'>Individual Problem Based assignment 2</td> <td>Romeo &amp Juliet</td> <td>20/10</td> <td>no</td> <td>No</td> <td>n/a</td>
-                        </tr>
-                        <tr>
-                            <td onclick = 'changePage("html/assignment_review.html")'>Peer Case Study 2</td> <td>Othello</td> <td>03/11</td> <td>Yes</td> <td>Yes</td> <td><button type="button" class = 'btn btn-default' onclick = 'changePage("html/peer_review_page.html")'>Peer Review</button></td>
-                        </tr>
-                        <tr>
-                            <td onclick = 'changePage("html/do_assignment_screen.html")'>Peer Problem based assignment 3</td> <td>King Lear</td> <td>25/11</td> <td>Yes</td> <td>No</td> <td><button type="button" class = 'btn btn-default' onclick = 'changePage("html/peer_review_page.html")'>Peer Review</button></td>
-                        </tr>
-                    </tbody>
-                </table>         
+                <div class="panel-heading">
+                    <h3>Current Assignments</h3>
+                </div>
+                <div class = 'panel-body'>
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Assessed Text</th>
+                                <th>Due Date</th>
+                                <th>Group assignment?</th>
+                                <th>Completed?</th>
+                                <th>Peer Review</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td onclick = 'changePage("html/assignment_review.html")' class = 'hoverUnderline'>Peer assessed assignment 2</td> <td>Macbeth</td> <td>07/10</td> <td>Yes</td> <td><span class = 'glyphicon glyphicon-ok'></span> Yes</td> <td><button type="button" class = 'btn btn-default' onclick = 'changePage("html/peer_review_page.html")'>Peer Review</button></td>
+                            </tr>
+                            <tr>
+                                <td onclick = 'changePage("html/do_assignment_screen.html")' class = 'hoverUnderline'>Individual Problem Based assignment 2</td> <td>Romeo &amp Juliet</td> <td>20/10</td> <td>no</td> <td><span class = 'glyphicon glyphicon-remove'></span> No</td> <td>n/a</td>
+                            </tr>
+                            <tr>
+                                <td onclick = 'changePage("html/assignment_review.html")' class = 'hoverUnderline'>Peer Case Study 2</td> <td>Othello</td> <td>03/11</td> <td>Yes</td> <td><span class = 'glyphicon glyphicon-ok'></span> Yes</td> <td><button type="button" class = 'btn btn-default' onclick = 'changePage("html/peer_review_page.html")'>Peer Review</button></td>
+                            </tr>
+                            <tr>
+                                <td onclick = 'changePage("html/do_assignment_screen.html")' class = 'hoverUnderline'>Peer Problem based assignment 3</td> <td>King Lear</td> <td>25/11</td> <td>Yes</td> <td><span class = 'glyphicon glyphicon-remove'></span> No</td> <td><button type="button" class = 'btn btn-default' onclick = 'changePage("html/peer_review_page.html")'>Peer Review</button></td>
+                            </tr>
+                        </tbody>
+                    </table>  
+                </div>       
             </div>
         </div>
         
-        <div class = 'row'>
+        <div class = 'row slightPadding'>
             <div id = "playlist" class="panel panel-default">        
-                <div class="panel-heading">Past Assignments</div>
-                <table class="table table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Assessed Text</th>
-                            <th>Due Date</th>
-                            <th>Group assignment?</th>
-                            <th>Grade</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class = 'success'>
-                            <td>Peer assessed assignment 1</td> <td>Macbeth</td> <td>07/8</td> <td>Yes</td> <td>85%</td>
-                        </tr>
-                        <tr class = 'danger'>
-                            <td>Individual Problem Based assignment 1</td> <td>Romeo &amp Juliet</td> <td>20/8</td> <td>No</td> <td>48%</td>
-                        </tr>
-                        <tr class = 'success'>
-                            <td>Peer Case Study 1</td> <td>Othello</td> <td>03/9</td> <td>Yes</td> <td>73%</td>
-                        </tr>
-                        <tr class = 'success'>
-                            <td>Peer Problem based assignment 2</td> <td>King Lear</td> <td>25/9</td> <td>Yes</td> <td>90%</td>
-                        </tr>
-                    </tbody>
-                </table>         
+                <div class="panel-heading">
+                    <h3>Past Assignments</h3>
+                </div>
+                <div class = 'panel-body'>
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Assessed Text</th>
+                                <th>Due Date</th>
+                                <th>Group assignment?</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class = 'success'>
+                                <td>Peer assessed assignment 1</td> <td>Macbeth</td> <td>07/8</td> <td>Yes</td> <td>85%</td>
+                            </tr>
+                            <tr class = 'danger'>
+                                <td>Individual Problem Based assignment 1</td> <td>Romeo &amp Juliet</td> <td>20/8</td> <td>No</td> <td>48%</td>
+                            </tr>
+                            <tr class = 'success'>
+                                <td>Peer Case Study 1</td> <td>Othello</td> <td>03/9</td> <td>Yes</td> <td>73%</td>
+                            </tr>
+                            <tr class = 'success'>
+                                <td>Peer Problem based assignment 2</td> <td>King Lear</td> <td>25/9</td> <td>Yes</td> <td>90%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>         
             </div>
         </div>
 
