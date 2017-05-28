@@ -10,8 +10,12 @@ function sidebarButtonChanger(id){
     var path = "html/" + id + "_page.html";
     var header = id[0].toUpperCase() + id.slice(1) + " Page";
 
-    $("#pageName").html(header);
+    //change all buttons, and add selected color
+    var buttons = $('#sidebar').find("button").removeClass('active');
+    $("#" + id).addClass("active");
 
+    //then, change the iframe source
+    $("#pageName").html(header);
     $("#pageLinker").attr("src", path);
 }
 
@@ -53,8 +57,4 @@ function changeVisibility(target, sender){
 /* Displays a message for pages that arent implemented */
 function notImplemented(){
     alert("Not yet implemented");
-}
-
-function onClickTest(){
-    console.log("Clicked!");
 }
