@@ -6,26 +6,28 @@ iframe{
 #header {
     position:absolute;
     left:0; right:0;
-    height: 122px;
+    height: 12.5%;
     border-style: solid;
     text-align: center;
 }
+
 #sidebar {
     position:absolute;
-    left:0; top:120px; bottom: 0;
-    width: 180px;
+    left:0; top:12.25%; bottom: 0;
+    width: 10%;
     border-style: solid;
 }
+
 #content {
     position: absolute;
-    left:178px; top:120px; right:0; bottom:0;
+    left:9.75%; top:12.25%; right:0; bottom:0;
     border-style: solid;
 }
 
 #painting {
     left:0; right:0; top: 0;
     position: absolute;
-    height: 116px;
+    max-width: 100%;
 }
 
 #userimg{
@@ -40,18 +42,15 @@ iframe{
     padding-top: 20px;
 }
 
-#playlist{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .sidebar-button{
     height: 5em;
+    background-color: #e6e8f2;
+    border-color: white;
 }
+
 
 .hoverUnderline:hover{
     text-decoration: underline;
-
 }
 
 .hidden{
@@ -59,12 +58,26 @@ iframe{
 }
 
 .light-background{
-    background-color: #dce1f2;
+    background-color: #d5dbf2;
+    border-color: #758ecd;
+}
+
+.very-light-background{
+    background-color: #e6e8f2;
+    border-color: #758ecd;
+}
+
+.light-list{
+    background-color: #f9faff;
     border-color: #758ecd;
 }
 
 div {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .fancy-text{

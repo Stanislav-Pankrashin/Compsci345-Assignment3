@@ -50,6 +50,11 @@ function changeVisibility(target, sender){
     }
 }
 
+/* Displays a message for pages that arent implemented */
+function notImplemented(){
+    alert("Not yet implemented");
+}
+
 function onClickTest(){
     console.log("Clicked!");
 }
